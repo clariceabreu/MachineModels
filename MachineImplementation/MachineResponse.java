@@ -1,3 +1,5 @@
+package br.com.clariceabreu.machinemodels.MachineImplementation;
+
 public enum MachineResponse {
   ACCEPTED("This is string is accepted by the chosen language"),
   REJECTED("This is string is rejected by the chosen language"),

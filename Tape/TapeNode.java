@@ -1,3 +1,5 @@
+package br.com.clariceabreu.machinemodels.Tape;
+
 import java.lang.Character;
 
 public class TapeNode {

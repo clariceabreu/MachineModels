@@ -1,3 +1,7 @@
+package br.com.clariceabreu.machinemodels.TransitionFunction;
+
+import br.com.clariceabreu.machinemodels.State.*;
+
 import java.lang.Character;
 
 public class TransitionFunction {

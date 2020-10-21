@@ -1,8 +1,14 @@
+import br.com.clariceabreu.machinemodels;
+
+import br.com.clariceabreu.machinemodels.TransitionFunction.*;
+import br.com.clariceabreu.machinemodels.MachineImplementation.*;
+import br.com.clariceabreu.machinemodels.State.*;
+
 import java.util.List;
 import java.util.ArrayList;
 import java.lang.Character;
 
-public class Main {
+public class CreateMachine {
     private static final String language1 = "1"; //This language represents the language a*b*
     private static final String language2 = "2"; //This language represents the language (a^n)(b^n)(c^n)
 

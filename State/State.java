@@ -1,3 +1,5 @@
+package br.com.clariceabreu.machinemodels.State;
+
 public class State {
   private Integer id;
   private StateType type;
