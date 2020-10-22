@@ -46,7 +46,7 @@ public class CreateTuringMachine {
         System.out.println("=================================");
         System.out.println("");
         System.out.println("Welcome to MACHINE MODELS program");
-        System.out.println("in this program, you will be able to choose a machine model and language that it supports.");
+        System.out.println("In this program, you will be able to choose a machine model and language that it supports.");
         System.out.println("Then, you can insert a string and validates if this string belongs to the chosen language");
         System.out.println("");
         System.out.println("=================================");
@@ -60,11 +60,11 @@ public class CreateTuringMachine {
 
     private static void printAvailableLanguages() {
         System.out.println("Available languagues:");
-        System.out.println(LanguageOne.id + " - " + LanguageOne.description + " - aplabet ∑ = " + LanguageOne.symbols);
+        System.out.println(LanguageOne.id + " - " + LanguageOne.description + " - alphabet ∑ = " + LanguageOne.symbols);
         System.out.println("");
-        System.out.println(LanguageTwo.id + " - " + LanguageTwo.description + " - aplabet ∑ = " + LanguageTwo.symbols);
+        System.out.println(LanguageTwo.id + " - " + LanguageTwo.description + " - alphabet ∑ = " + LanguageTwo.symbols);
         System.out.println("");
-        System.out.println(LanguageThree.id + " - " + LanguageThree.description + " - aplabet ∑ = " + LanguageThree.symbols);
+        System.out.println(LanguageThree.id + " - " + LanguageThree.description + " - alphabet ∑ = " + LanguageThree.symbols);
         System.out.println("");
     }
 
@@ -75,7 +75,7 @@ public class CreateTuringMachine {
             System.out.println("Type the language id you want to validade and press enter:");
             chosenLanguage = scan.nextLine();
         }
-        System.out.println("Type the string you want to validate if it belongs to the language and press enter:");
+        System.out.println("Type the string you want to validate if it belongs to the chosen language and press enter:");
         input = scan.nextLine();
         System.out.println("");
     }
