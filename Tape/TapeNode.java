@@ -1,4 +1,4 @@
-package br.com.clariceabreu.machinemodels.Tape;
+package clariceabreu.machinemodels.Tape;
 
 import java.lang.Character;
 

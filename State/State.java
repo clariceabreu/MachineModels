@@ -1,4 +1,4 @@
-package br.com.clariceabreu.machinemodels.State;
+package clariceabreu.machinemodels.State;
 
 public class State {
   private Integer id;

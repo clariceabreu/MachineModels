@@ -1,8 +1,8 @@
-package br.com.clariceabreu.machinemodels.MachineImplementation;
+package clariceabreu.machinemodels.MachineImplementation;
 
-import br.com.clariceabreu.machinemodels.TransitionFunction.*;
-import br.com.clariceabreu.machinemodels.State.*;
-import br.com.clariceabreu.machinemodels.Tape.*;
+import clariceabreu.machinemodels.TransitionFunction.*;
+import clariceabreu.machinemodels.State.*;
+import clariceabreu.machinemodels.Tape.*;
 
 import java.util.HashMap;
 import java.util.List;

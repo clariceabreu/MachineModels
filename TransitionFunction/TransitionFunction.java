@@ -1,6 +1,6 @@
-package br.com.clariceabreu.machinemodels.TransitionFunction;
+package clariceabreu.machinemodels.TransitionFunction;
 
-import br.com.clariceabreu.machinemodels.State.*;
+import clariceabreu.machinemodels.State.*;
 
 import java.lang.Character;
 

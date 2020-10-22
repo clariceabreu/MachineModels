@@ -1,4 +1,4 @@
-package br.com.clariceabreu.machinemodels.TransitionFunction;
+package clariceabreu.machinemodels.TransitionFunction;
 
 public enum Direction {
     LEFT,

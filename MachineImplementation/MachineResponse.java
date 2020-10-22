@@ -1,4 +1,4 @@
-package br.com.clariceabreu.machinemodels.MachineImplementation;
+package clariceabreu.machinemodels.MachineImplementation;
 
 public enum MachineResponse {
   ACCEPTED("This is string is accepted by the chosen language"),
