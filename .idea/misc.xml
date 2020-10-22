@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
+        <option value="$PROJECT_DIR$/MachineImplementation/pom.xml" />
+        <option value="$PROJECT_DIR$/Tape/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/MachineImplementationM/pom.xml" />
+        <option value="$PROJECT_DIR$/TapeM/pom.xml" />
+      </set>
+    </option>
+  </component>
+</project>
