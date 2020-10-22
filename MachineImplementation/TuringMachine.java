@@ -9,7 +9,7 @@ import java.util.List;
 import java.lang.Character;
 
 public class TuringMachine {
-  private TapeNode tapePostion;
+  private Tape tape;
   private List<TransitionFunction> functions;
   private HashMap<String, TransitionFunction> functionsMap;
   private State currentState;
@@ -27,7 +27,7 @@ public class TuringMachine {
       return MachineResponse.ERROR;
     }
 
-    createTape(input);
+    tape = new Tape(input);
 
     while (!isCurrentStateAStopState()) {
       this.currentState = getNewState();
@@ -54,58 +54,20 @@ public class TuringMachine {
     }
   }
 
-  private void createTape(String input) {
-    TapeNode node = new TapeNode();
-    if (input.length() == 0) {
-      this.tapePostion = node;
-      return;
-    }
-
-    TapeNode firstNode = node;
-
-    for (Character c : input.toCharArray()) {
-      node.setRightNode(new TapeNode(c));
-      TapeNode lastNode = node;
-      node = node.right();
-      node.setLeftNode(lastNode);
-    }
-
-    this.tapePostion = firstNode.right();
-  }
-
   private boolean isCurrentStateAStopState() {
     return this.currentState == null || this.currentState.getType().equals(StateType.ACCEPTANCE) || this.currentState.getType().equals(StateType.REJECTION);
   }
 
   private State getNewState() {
-    String id = TransitionFunction.generateFunctionId(this.currentState, this.tapePostion.getValue());
+    String id = TransitionFunction.generateFunctionId(this.currentState, this.tape.getValue());
 
     if (functionsMap.containsKey(id)) {
       TransitionFunction function = functionsMap.get(id);
-      this.tapePostion.setValue(function.getOutputSymbol());
-      moveTapePostion(function.getDirection());
+      this.tape.setValue(function.getOutputSymbol());
+      this.tape.slide(function.getDirection());
       return function.getNextState();
     }
 
     return null;
   }
-
-  private void moveTapePostion(Direction direction) {
-    if (direction.equals(Direction.LEFT)) {
-      if (this.tapePostion.left() == null) {
-        TapeNode newNode = new TapeNode();
-        newNode.setRightNode(this.tapePostion);
-        this.tapePostion.setLeftNode(newNode);
-      }
-      this.tapePostion = tapePostion.left();
-    } else if (direction.equals(Direction.RIGHT)) {
-      if (this.tapePostion.right() == null) {
-        TapeNode newNode = new TapeNode();
-        newNode.setLeftNode(this.tapePostion);
-        this.tapePostion.setRightNode(newNode);
-      }
-      this.tapePostion = tapePostion.right();
-    }
-  }
-
 }
